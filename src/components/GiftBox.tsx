@@ -15,12 +15,12 @@ export const GiftBox = ({ onOpen }: GiftBoxProps) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
-      <div className="text-center mb-8 animate-fade-in">
-        <h1 className="text-3xl md:text-4xl font-romantic text-foreground mb-4">
+    <div className="flex flex-col items-center justify-center min-h-screen px-4 py-8">
+      <div className="text-center mb-6 md:mb-8 animate-fade-in">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-romantic text-foreground mb-3 md:mb-4">
           A Special Gift for You
         </h1>
-        <p className="text-lg text-muted-foreground">
+        <p className="text-base md:text-lg text-muted-foreground px-2">
           Click the box to open your surprise ✨
         </p>
       </div>
@@ -33,7 +33,7 @@ export const GiftBox = ({ onOpen }: GiftBoxProps) => {
         `}
       >
         {/* Gift Box */}
-        <div className="relative w-48 h-48 md:w-64 md:h-64">
+        <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64">
           {/* Box Body */}
           <div className="absolute inset-0 bg-gradient-box rounded-lg shadow-box transform perspective-1000">
             {/* Box Top */}
@@ -74,8 +74,8 @@ export const GiftBox = ({ onOpen }: GiftBoxProps) => {
         </div>
       </div>
       
-      <div className="mt-8 text-center animate-fade-in" style={{ animationDelay: '0.5s' }}>
-        <p className="text-sm text-muted-foreground italic">
+      <div className="mt-6 md:mt-8 text-center animate-fade-in px-4" style={{ animationDelay: '0.5s' }}>
+        <p className="text-xs sm:text-sm text-muted-foreground italic">
           "Good things come to those who click" 💕
         </p>
       </div>
